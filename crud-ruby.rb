@@ -76,7 +76,9 @@ while true
     when 3
       create_user
     when 4
+      puts "Haven't made this method yet"
     when 5
+      puts "Haven't made this method yet"
     when 6
       puts "See ya"
       exit 0
