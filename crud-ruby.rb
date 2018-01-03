@@ -52,9 +52,9 @@ def create_user
     phone_number: phone_number
   }
 
-  response = HTTParty.post("#{BASE_URL}/users", body: user)
+  response = HTTParty.post("#{BASE_URL}/users", body: user.to_json, headers: { 'Content-Type' => 'application/json' } )
 
-  puts response
+  print_user(response)
 end
 
 while true
